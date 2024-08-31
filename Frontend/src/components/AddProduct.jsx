@@ -28,7 +28,7 @@ const AddProduct = () =>{
         formData.append("name", data.name);
         formData.append("price", data.price);
         formData.append("image", data.image);
-        fetch("http://localhost:3020/products",{
+        fetch("http://135.181.37.152:3020/products",{
             method:"POST",
             body:formData
         }).then(e=>{

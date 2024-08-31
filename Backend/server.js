@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
 
-const client = new MongoClient('mongodb://localhost:27017');
+const client = new MongoClient('mongodb://127.0.0.1:27017');
 app.use(express.static(path.join(__dirname,'../Frontend/build')));
 app.use(cors());
 app.use(bodyParser.urlencoded({extended:false}));

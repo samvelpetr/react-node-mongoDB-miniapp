@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 
-
-
 const Products = () =>{
     const [data,setData] = useState([]);
 
     useEffect(()=>{
-        fetch("http://127.0.0.1:3020/products")
+        fetch("http://135.181.37.152:3020/products")
         .then(e=>e.json())
         .then(resp=>setData(resp))
     },[]) 
